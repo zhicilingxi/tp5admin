@@ -1,0 +1,3349 @@
+---------------------------------------------------------------
+[ 2019-04-05T10:12:55+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.116835s] [吞吐率：8.56req/s] [内存消耗：5,235.52kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: url[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: sort[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义数组索引: icon[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:32]
+[ error ] [8]未定义数组索引: icon[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:34]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:41]
+[ error ] [2]include(iconselect.html): failed to open stream: No such file or directory[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:86]
+[ error ] [2]include(): Failed opening 'iconselect.html' for inclusion (include_path='.;C:\php\pear')[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:86]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003580s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.012436s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009494s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000572s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:13:24+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.082062s] [吞吐率：12.19req/s] [内存消耗：5,233.98kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: url[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: sort[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义数组索引: icon[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:32]
+[ error ] [8]未定义数组索引: icon[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:34]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:41]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001603s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.011348s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.011061s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:15:02+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.097397s] [吞吐率：10.27req/s] [内存消耗：5,232.77kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:31]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010882s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.011793s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009404s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.002726s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000595s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:16:16+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.087203s] [吞吐率：11.47req/s] [内存消耗：5,233.98kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010570s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.009082s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009056s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000693s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:16:16+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.039412s] [吞吐率：25.37req/s] [内存消耗：2,499.41kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:18:51+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.090635s] [吞吐率：11.03req/s] [内存消耗：5,233.99kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004022s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.008585s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.010010s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:18:51+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.036943s] [吞吐率：27.07req/s] [内存消耗：2,499.41kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:18:54+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.089890s] [吞吐率：11.12req/s] [内存消耗：5,234.08kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010775s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.010951s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009382s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:18:54+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.027210s] [吞吐率：36.75req/s] [内存消耗：2,500.09kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:18:55+08:00 ] 192.168.10.207 GET c.m.com/favicon.ico
+[运行时间：0.033354s] [吞吐率：29.98req/s] [内存消耗：2,499.92kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:20:18+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.273540s] [吞吐率：3.66req/s] [内存消耗：5,233.12kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001617s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.196817s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009755s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000285s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:21:16+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.109178s] [吞吐率：9.16req/s] [内存消耗：5,508.35kb] [文件加载：61]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004629s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.011844s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.010148s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:21:16+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.045065s] [吞吐率：22.19req/s] [内存消耗：2,499.41kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:21:16+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/showblocks/plugin.js?t=DBAA
+[运行时间：0.026389s] [吞吐率：37.89req/s] [内存消耗：2,500.66kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'showblocks' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:21:16+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/justify/plugin.js?t=DBAA
+[运行时间：0.035353s] [吞吐率：28.29req/s] [内存消耗：2,500.65kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'justify' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:21:20+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.073302s] [吞吐率：13.64req/s] [内存消耗：5,234.10kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001707s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.008039s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.008605s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000474s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:21:20+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.040100s] [吞吐率：24.94req/s] [内存消耗：2,500.09kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:21:21+08:00 ] 192.168.10.207 GET c.m.com/favicon.ico
+[运行时间：0.036984s] [吞吐率：27.04req/s] [内存消耗：2,499.92kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:21:21+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/showblocks/plugin.js?t=DBAA
+[运行时间：0.022852s] [吞吐率：43.76req/s] [内存消耗：2,500.66kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'showblocks' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:21:21+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/justify/plugin.js?t=DBAA
+[运行时间：0.026198s] [吞吐率：38.17req/s] [内存消耗：2,500.65kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'justify' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:21:45+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.093439s] [吞吐率：10.70req/s] [内存消耗：5,234.02kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000978s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.012647s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.010022s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000450s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:21:45+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.034882s] [吞吐率：28.67req/s] [内存消耗：2,499.41kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:21:46+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/showblocks/plugin.js?t=DBAA
+[运行时间：0.030479s] [吞吐率：32.81req/s] [内存消耗：2,500.66kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'showblocks' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:21:46+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/justify/plugin.js?t=DBAA
+[运行时间：0.036333s] [吞吐率：27.52req/s] [内存消耗：2,500.65kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'justify' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:22:45+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.100860s] [吞吐率：9.91req/s] [内存消耗：5,233.11kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001137s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.013052s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.011740s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000995s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:24:08+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.115205s] [吞吐率：8.68req/s] [内存消耗：5,508.30kb] [文件加载：61]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001586s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.010088s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.001907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009096s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.001678s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000798s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:24:08+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.030452s] [吞吐率：32.84req/s] [内存消耗：2,499.41kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:24:09+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/justify/plugin.js?t=DBAA
+[运行时间：0.026916s] [吞吐率：37.15req/s] [内存消耗：2,500.65kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'justify' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:24:09+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/showblocks/plugin.js?t=DBAA
+[运行时间：0.028763s] [吞吐率：34.77req/s] [内存消耗：2,500.66kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'showblocks' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:24:51+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.091541s] [吞吐率：10.92req/s] [内存消耗：5,234.01kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005622s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.012151s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.010136s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000554s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:24:51+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.032079s] [吞吐率：31.17req/s] [内存消耗：2,499.41kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:24:51+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/justify/plugin.js?t=DBAA
+[运行时间：0.025291s] [吞吐率：39.54req/s] [内存消耗：2,500.65kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'justify' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:24:51+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/showblocks/plugin.js?t=DBAA
+[运行时间：0.026550s] [吞吐率：37.66req/s] [内存消耗：2,500.66kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'showblocks' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:25:14+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/justify/plugin.js?t=DBAA
+[运行时间：0.040803s] [吞吐率：24.51req/s] [内存消耗：2,500.98kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'justify' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:26:49+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.094888s] [吞吐率：10.54req/s] [内存消耗：5,234.01kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002824s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.012815s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009784s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.001245s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000608s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:26:49+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.027379s] [吞吐率：36.52req/s] [内存消耗：2,499.41kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:26:49+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/justify/plugin.js?t=DBAA
+[运行时间：0.027079s] [吞吐率：36.93req/s] [内存消耗：2,500.65kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'justify' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:26:49+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/showblocks/plugin.js?t=DBAA
+[运行时间：0.029025s] [吞吐率：34.45req/s] [内存消耗：2,500.66kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'showblocks' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:28:15+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.096619s] [吞吐率：10.35req/s] [内存消耗：5,234.01kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010987s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.009405s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009390s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000488s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:28:15+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.030103s] [吞吐率：33.22req/s] [内存消耗：2,499.41kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:28:15+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/justify/plugin.js?t=DBAA
+[运行时间：0.026545s] [吞吐率：37.67req/s] [内存消耗：2,500.65kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'justify' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:28:15+08:00 ] 192.168.10.207 GET c.m.com/static/admin/plugins/ckeditor/plugins/showblocks/plugin.js?t=DBAA
+[运行时间：0.027199s] [吞吐率：36.77req/s] [内存消耗：2,500.66kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+  't' => 'DBAA',
+  'ckeditor' => 'plugins',
+  'showblocks' => 'plugin.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:28:48+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.098905s] [吞吐率：10.11req/s] [内存消耗：5,234.09kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002353s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.010659s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.010315s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:28:49+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.048318s] [吞吐率：20.70req/s] [内存消耗：2,500.09kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:28:50+08:00 ] 192.168.10.207 GET c.m.com/favicon.ico
+[运行时间：0.041397s] [吞吐率：24.16req/s] [内存消耗：2,499.92kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:29:07+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.086581s] [吞吐率：11.55req/s] [内存消耗：5,234.09kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005483s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.008981s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009883s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:29:08+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.047308s] [吞吐率：21.14req/s] [内存消耗：2,500.09kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:29:09+08:00 ] 192.168.10.207 GET c.m.com/favicon.ico
+[运行时间：0.035154s] [吞吐率：28.45req/s] [内存消耗：2,499.92kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:30:43+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.096289s] [吞吐率：10.39req/s] [内存消耗：5,234.09kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001075s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.008885s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.010394s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.001086s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000648s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:30:43+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.041888s] [吞吐率：23.87req/s] [内存消耗：2,500.09kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:30:44+08:00 ] 192.168.10.207 GET c.m.com/favicon.ico
+[运行时间：0.028675s] [吞吐率：34.87req/s] [内存消耗：2,499.92kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:31:08+08:00 ] 192.168.10.207 POST c.m.com/manager/ajax_uploadimg/
+[运行时间：0.023138s] [吞吐率：43.22req/s] [内存消耗：2,500.51kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manager',
+    1 => 'ajax_uploadimg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryA8xnne1wGABtD3dO',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:36:14+08:00 ] 192.168.10.207 POST c.m.com/manager/ajax_uploadimg/
+[运行时间：0.036751s] [吞吐率：27.21req/s] [内存消耗：2,500.51kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manager',
+    1 => 'ajax_uploadimg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryVE9Lw0LZ1TABz08a',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:36:28+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.112387s] [吞吐率：8.90req/s] [内存消耗：5,234.03kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001252s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.016079s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.010274s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000546s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:36:28+08:00 ] 192.168.10.207 GET c.m.com/static/img/no_image-100x100.png
+[运行时间：0.030585s] [吞吐率：32.70req/s] [内存消耗：2,499.76kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'no_image-100x100.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:36:38+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.031865s] [吞吐率：31.38req/s] [内存消耗：2,613.49kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNMMDmpx9NpxTKVsm',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:36:59+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.049250s] [吞吐率：20.30req/s] [内存消耗：3,151.23kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryvlAexiDc0kNTBobA',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->uploadimg[ D:\wamp\www\tp5cms\application\admin\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:17]
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+[ error ] [2]mkdir(): No such file or directory[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+---------------------------------------------------------------
+[ 2019-04-05T10:37:07+08:00 ] 192.168.10.207 GET c.m.com/admin/ajax/uploadimg/
+[运行时间：0.032000s] [吞吐率：31.25req/s] [内存消耗：3,031.73kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->uploadimg[ D:\wamp\www\tp5cms\application\admin\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:17]
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+[ error ] [2]mkdir(): No such file or directory[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+---------------------------------------------------------------
+[ 2019-04-05T10:37:47+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.041741s] [吞吐率：23.96req/s] [内存消耗：3,153.69kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryqPJ8XwBUgAJHNawW',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->uploadimg[ D:\wamp\www\tp5cms\application\admin\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:17]
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+[ error ] [2]mkdir(): No such file or directory[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+[ error ] [8]未定义变量: previewname[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:28]
+[ error ] [8]未定义变量: uploadFilename[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:29]
+---------------------------------------------------------------
+[ 2019-04-05T10:39:09+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.044935s] [吞吐率：22.25req/s] [内存消耗：2,556.69kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryfGKbzdusamGK9mKZ',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected 'echo' (T_ECHO)[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:30]
+---------------------------------------------------------------
+[ 2019-04-05T10:39:24+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.033578s] [吞吐率：29.78req/s] [内存消耗：3,151.93kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryOT8GXnExpe4F26I5',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->uploadimg[ D:\wamp\www\tp5cms\application\admin\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:17]
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+[ error ] [2]mkdir(): No such file or directory[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+---------------------------------------------------------------
+[ 2019-04-05T10:39:24+08:00 ] 192.168.10.207 GET c.m.com/admin/article/png
+[运行时间：0.093347s] [吞吐率：10.71req/s] [内存消耗：5,223.77kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010626s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.014497s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.008418s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/png' LIMIT 1 [ RunTime:0.000323s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:39:24+08:00 ] 192.168.10.207 GET c.m.com/admin/article/png
+[运行时间：0.149758s] [吞吐率：6.68req/s] [内存消耗：5,223.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001083s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.009405s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009158s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/png' LIMIT 1 [ RunTime:0.000801s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:40:24+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.033521s] [吞吐率：29.83req/s] [内存消耗：2,556.80kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryX5QZvBK4SraBlVuI',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected 'echo' (T_ECHO)[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:30]
+---------------------------------------------------------------
+[ 2019-04-05T10:40:33+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.043340s] [吞吐率：23.07req/s] [内存消耗：3,151.92kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarycEUGbSXh1e5hnrGB',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->uploadimg[ D:\wamp\www\tp5cms\application\admin\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:17]
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+[ error ] [2]mkdir(): No such file or directory[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+---------------------------------------------------------------
+[ 2019-04-05T10:40:33+08:00 ] 192.168.10.207 GET c.m.com/admin/article/20190405/993a1c3ab813ec446967805102e09c9c.png
+[运行时间：0.081083s] [吞吐率：12.33req/s] [内存消耗：5,224.57kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => '20190405',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003203s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.009716s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009326s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/20190405/993a1c3ab813ec446967805102e09c9c.png' LIMIT 1 [ RunTime:0.000556s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:40:33+08:00 ] 192.168.10.207 GET c.m.com/admin/article/20190405/993a1c3ab813ec446967805102e09c9c.png
+[运行时间：0.124419s] [吞吐率：8.04req/s] [内存消耗：5,224.57kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => '20190405',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001078s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.009719s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009599s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/20190405/993a1c3ab813ec446967805102e09c9c.png' LIMIT 1 [ RunTime:0.000522s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:41:20+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.038658s] [吞吐率：25.87req/s] [内存消耗：3,151.55kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryeuqUOo1gkmJBn7FF',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->uploadimg[ D:\wamp\www\tp5cms\application\admin\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:17]
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+[ error ] [2]mkdir(): No such file or directory[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+---------------------------------------------------------------
+[ 2019-04-05T10:41:20+08:00 ] 192.168.10.207 GET c.m.com/admin/article/20190405/f9ac25e80a1254d12b797df6999ff270.png
+[运行时间：0.081618s] [吞吐率：12.25req/s] [内存消耗：5,224.57kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => '20190405',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000912s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.008664s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.008219s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/20190405/f9ac25e80a1254d12b797df6999ff270.png' LIMIT 1 [ RunTime:0.000292s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:41:20+08:00 ] 192.168.10.207 GET c.m.com/admin/article/20190405/f9ac25e80a1254d12b797df6999ff270.png
+[运行时间：0.079973s] [吞吐率：12.50req/s] [内存消耗：5,224.57kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => '20190405',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000843s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.011614s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.008115s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/20190405/f9ac25e80a1254d12b797df6999ff270.png' LIMIT 1 [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:41:52+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.037908s] [吞吐率：26.38req/s] [内存消耗：3,151.48kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary2b3AbohHVDfUtAzB',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->uploadimg[ D:\wamp\www\tp5cms\application\admin\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:17]
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+[ error ] [2]mkdir(): No such file or directory[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+---------------------------------------------------------------
+[ 2019-04-05T10:41:52+08:00 ] 192.168.10.207 GET c.m.com/admin/article/public/uploads/article/24b391e0d874f84355a3da963065e851.png
+[运行时间：0.083449s] [吞吐率：11.98req/s] [内存消耗：5,224.81kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'uploads' => 'article',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001024s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.010242s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.009905s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/public/uploads/article/24b391e0d874f84355a3da963065e851.png' LIMIT 1 [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:41:52+08:00 ] 192.168.10.207 GET c.m.com/admin/article/public/uploads/article/24b391e0d874f84355a3da963065e851.png
+[运行时间：0.081789s] [吞吐率：12.23req/s] [内存消耗：5,224.75kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'uploads' => 'article',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000849s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.008100s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.008678s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/public/uploads/article/24b391e0d874f84355a3da963065e851.png' LIMIT 1 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:42:05+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.036366s] [吞吐率：27.50req/s] [内存消耗：3,151.66kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryaLkT7ffmAt8UeJRc',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->uploadimg[ D:\wamp\www\tp5cms\application\admin\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:17]
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+[ error ] [2]mkdir(): No such file or directory[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+---------------------------------------------------------------
+[ 2019-04-05T10:42:05+08:00 ] 192.168.10.207 GET c.m.com/public/uploads/article/2ec317399931f5ccf34e657d3589ee1a.png
+[运行时间：0.032040s] [吞吐率：31.21req/s] [内存消耗：2,499.74kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:42:05+08:00 ] 192.168.10.207 GET c.m.com/public/uploads/article/2ec317399931f5ccf34e657d3589ee1a.png
+[运行时间：0.034668s] [吞吐率：28.85req/s] [内存消耗：2,499.74kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:42:37+08:00 ] 192.168.10.207 GET c.m.com//public/uploads/article/2ec317399931f5ccf34e657d3589ee1a.png
+[运行时间：0.043286s] [吞吐率：23.10req/s] [内存消耗：2,499.95kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:42:41+08:00 ] 192.168.10.207 GET c.m.com/public/uploads/article/2ec317399931f5ccf34e657d3589ee1a.png
+[运行时间：0.041215s] [吞吐率：24.26req/s] [内存消耗：2,499.95kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:43:27+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.100010s] [吞吐率：10.00req/s] [内存消耗：5,233.84kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义变量: article[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011935s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.011398s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.007627s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000466s ]
+---------------------------------------------------------------
+[ 2019-04-05T10:43:36+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.040903s] [吞吐率：24.45req/s] [内存消耗：3,151.76kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryA0mNP3iFajONZJyE',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->uploadimg[ D:\wamp\www\tp5cms\application\admin\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:17]
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+[ error ] [2]mkdir(): No such file or directory[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:19]
+---------------------------------------------------------------
+[ 2019-04-05T10:43:36+08:00 ] 192.168.10.207 GET c.m.com/public/uploads/article/20190405/7bdd9de6fe7431f0cf5ec6ca4d800c8d.png
+[运行时间：0.037849s] [吞吐率：26.42req/s] [内存消耗：2,499.98kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  0 => '7bdd9de6fe7431f0cf5ec6ca4d800c8d.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:43:36+08:00 ] 192.168.10.207 GET c.m.com/public/uploads/article/20190405/7bdd9de6fe7431f0cf5ec6ca4d800c8d.png
+[运行时间：0.041002s] [吞吐率：24.39req/s] [内存消耗：2,499.98kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  0 => '7bdd9de6fe7431f0cf5ec6ca4d800c8d.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:43:50+08:00 ] 192.168.10.207 GET c.m.com/public/uploads/article/20190405/7bdd9de6fe7431f0cf5ec6ca4d800c8d.png
+[运行时间：0.036005s] [吞吐率：27.77req/s] [内存消耗：2,500.78kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  0 => '7bdd9de6fe7431f0cf5ec6ca4d800c8d.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:47:24+08:00 ] 192.168.10.207 GET c.m.com/public/uploads/article/20190405/7bdd9de6fe7431f0cf5ec6ca4d800c8d.png
+[运行时间：0.039800s] [吞吐率：25.13req/s] [内存消耗：2,500.81kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  0 => '7bdd9de6fe7431f0cf5ec6ca4d800c8d.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:47:52+08:00 ] 192.168.10.207 GET c.m.com/public/uploads/article/20190405/7bdd9de6fe7431f0cf5ec6ca4d800c8d.png
+[运行时间：0.033597s] [吞吐率：29.76req/s] [内存消耗：2,500.81kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  0 => '7bdd9de6fe7431f0cf5ec6ca4d800c8d.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:48:27+08:00 ] 192.168.10.207 GET c.m.com/static/7bdd9de6fe7431f0cf5ec6ca4dd800c8d.png
+[运行时间：0.035136s] [吞吐率：28.46req/s] [内存消耗：2,500.20kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => '7bdd9de6fe7431f0cf5ec6ca4dd800c8d.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-05T10:49:21+08:00 ] 192.168.10.207 POST c.m.com/admin/ajax/uploadimg/
+[运行时间：0.035171s] [吞吐率：28.43req/s] [内存消耗：3,151.83kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'uploadimg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1061',
+  'origin' => 'http://c.m.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBaAnlANATnOQG7Pq',
+  'accept' => '*/*',
+  'referer' => 'http://c.m.com/admin/article/edit',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+  'ckCsrfToken' => 'bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->uploadimg[ D:\wamp\www\tp5cms\application\admin\controller\Ajax.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:18]
+[ error ] [8]Use of undefined constant BASEPATH - assumed 'BASEPATH'[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:20]
+[ error ] [2]mkdir(): No such file or directory[D:\wamp\www\tp5cms\application\admin\controller\Ajax.php:20]
+---------------------------------------------------------------
+[ 2019-04-05T11:12:05+08:00 ] 192.168.10.207 GET c.m.com/admin/article/edit
+[运行时间：0.097402s] [吞吐率：10.27req/s] [内存消耗：5,234.09kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\tp5cms\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'c.m.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://c.m.com/admin/article/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ugt2qgo4tcthtoigtu268uehg1; mindex=3-0; ckCsrfToken=bTrd3W1pz8AFpD3w962LgdNVO8f73e74QjW79F5u',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->edit[ D:\wamp\www\tp5cms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5cms\public/../application/admin\view\base.html [ array (
+  0 => 'leftlist',
+  1 => 'ParentNav',
+  2 => '_view',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\admin\model\Settings_module::getModuleList(), called in D:\wamp\www\tp5cms\application\admin\controller\Base.php on line 18 and defined[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:11]
+[ error ] [8]未定义变量: where[D:\wamp\www\tp5cms\application\admin\model\Settings_module.php:12]
+[ error ] [8]未定义数组索引: id[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:5]
+[ error ] [8]未定义数组索引: name[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:12]
+[ error ] [8]未定义数组索引: keyword[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:18]
+[ error ] [8]未定义数组索引: author[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:25]
+[ error ] [8]未定义数组索引: img[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:35]
+[ error ] [8]未定义数组索引: img[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:36]
+[ error ] [8]未定义数组索引: desc[D:\wamp\www\tp5cms\application\admin\view\article\edit.html:43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001483s ] mysql:host=127.0.0.1;dbname=tpcms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_module` [ RunTime:0.011825s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_module` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `settings_url` [ RunTime:0.007961s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 1 [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 33 [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 34 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.name as mname FROM `settings_url` `a`  JOIN `settings_module` `b` ON `a`.`module_id`=`b`.`id` WHERE  `is_show` = 1  AND `module_id` = 35 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `settings_url` WHERE  `url` = '/admin/article/edit' LIMIT 1 [ RunTime:0.000419s ]

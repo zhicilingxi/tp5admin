@@ -74,7 +74,7 @@ class Setting extends Base
 	public function urllist()
 	{
 		$where = array();
-		$pagesize = 2;
+		$pagesize = 20;
 		$request = Request::instance();
 		$data = $request->param();
 		$search = $data['keyword'];

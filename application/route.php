@@ -10,12 +10,9 @@
 // +----------------------------------------------------------------------
 
 return [
-    '__pattern__' => [
-        'name' => '\w+',
-    ],
-    '[hello]'     => [
-        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
+  	'/'=>'home/index/index',
+  	'article/class/:id'=>'home/article/index',
+  	'article/:id'=>'home/article/info',
+  	'articledy/:id'=>'home/article/infody',
 
 ];
